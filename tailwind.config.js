@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+      },
+      colors: {
+        blueGradient: "#8e9dfe",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
