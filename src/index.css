@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background {
+  background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+}
+
+.category-item {
+  @apply bg-veryLightGray p-10 rounded-lg
+}
+
+.category-item-img {
+  @apply bg-lightGray p-4 mb-8 rounded-lg
+}
+
+.category-item-h3 {
+  @apply text-darkGray text-xl font-extrabold mb-2
+}
+
+.category-item-p {
+  @apply text-mediumDarkGray text-base font-medium
+}

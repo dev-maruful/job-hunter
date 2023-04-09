@@ -8,6 +8,11 @@ export default {
       },
       colors: {
         blueGradient: "#8e9dfe",
+        gray: "#757575",
+        darkGray: "#474747",
+        mediumDarkGray: "#A3A3A3",
+        veryLightGray: "#DCDCDC	",
+        lightGray: "#D3D3D3",
       },
     },
   },
@@ -17,8 +22,6 @@ export default {
       {
         mytheme: {
           primary: "#1001af",
-
-          secondary: "#d15786",
 
           accent: "#c6f7a5",
 
