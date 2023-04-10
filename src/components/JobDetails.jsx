@@ -8,7 +8,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
-import { addToDb } from "../utils/fakeDB";
+import { addJobsToDb } from "../utils/fakeDB";
 
 const JobDetails = () => {
   const jobDetails = useLoaderData();
@@ -16,7 +16,7 @@ const JobDetails = () => {
   console.log(id);
 
   const handleAddToDb = (id) => {
-    addToDb(id);
+    addJobsToDb(id);
     console.log(id);
   };
 

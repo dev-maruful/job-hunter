@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { getStoredJobsFromDb } from "../utils/fakeDB";
+import { useLoaderData } from "react-router-dom";
 
 const AppliedJobs = () => {
+  const allJobs = useLoaderData();
+
+  let jobs = [];
+  const savedJobs = getStoredJobsFromDb();
+  for (const id in savedJobs) {
+    const foundJobs = allJobs.find((job) => job.id === id);
+    jobs.push(foundJobs);
+  }
+  console.log(jobs);
+
   return (
     <div>
       <h1 className="my-14 text-3xl font-extrabold">Applied Jobs</h1>
@@ -21,10 +33,10 @@ const AppliedJobs = () => {
           className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Item 1</a>
+            <button>Remote</button>
           </li>
           <li>
-            <a>Item 2</a>
+            <button>On-site</button>
           </li>
         </ul>
       </div>
