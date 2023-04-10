@@ -6,6 +6,7 @@ import "./index.css";
 import Root from "./components/Root";
 import Home from "./components/Home";
 import { data } from "autoprefixer";
+import JobDetails from "./components/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,12 +18,15 @@ const router = createBrowserRouter([
         element: <Home />,
         loader: () => fetch("featuredJobs.json"),
       },
+      {
+        path: "jobDetails/:id",
+        element: <JobDetails />,
+        loader: () => fetch("featuredJobs.json"),
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );

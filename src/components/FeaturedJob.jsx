@@ -1,7 +1,9 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const FeaturedJob = ({ singleJob }) => {
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -37,9 +39,11 @@ const FeaturedJob = ({ singleJob }) => {
             <p>Salary : {salary}</p>
           </div>
         </div>
-        <button className="bg-blueGradient w-[200px] text-white border-none py-4 rounded-lg text-xl font-extrabold">
-          View Details
-        </button>
+        <Link to={`/jobDetails/${id}`}>
+          <button className="bg-blueGradient w-[200px] text-white border-none py-4 rounded-lg text-xl font-extrabold">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );

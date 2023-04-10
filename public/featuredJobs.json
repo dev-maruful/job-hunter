@@ -1,6 +1,6 @@
 [
   {
-    "id": "job001",
+    "id": "001",
     "company_logo": "https://cdn.freebiesupply.com/logos/large/2x/google-1-1-logo-png-transparent.png",
     "job_title": "Software Engineer",
     "company_name": "Google LLC",
@@ -8,8 +8,8 @@
     "location": "Dhaka, Bangladesh",
     "fulltime_or_parttime": "Full-time",
     "salary": "100k - 120k",
-    "job_description": "We are looking for a highly skilled software engineer to join our team...",
-    "job_responsibility": "Develop high-quality software products using modern software development practices...",
+    "job_description": "We are looking for a Data Analyst to join our team and help us turn data into actionable insights. The ideal candidate should have experience working with large datasets, analyzing data using statistical methods, and creating data visualizations. In this role, you will collaborate with other teams to identify business needs and develop solutions that drive growth and innovation.",
+    "job_responsibility": "Collect and analyze large datasets to identify trends and patterns. Interpret data and present findings to stakeholders. Develop and maintain data models and dashboards. Collaborate with other teams to identify business needs and develop solutions that drive growth and innovation.",
     "educational_requirements": "Bachelor's degree in Computer Science or related field",
     "experiences": "5+ years of experience in software engineering",
     "contact_information": {
@@ -18,7 +18,7 @@
     }
   },
   {
-    "id": "job002",
+    "id": "002",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/800px-Logonetflix.png",
     "job_title": "Marketing Manager",
     "company_name": "Netflix",
@@ -26,8 +26,8 @@
     "location": "New York, NY",
     "fulltime_or_parttime": "Full-time",
     "salary": "90k - 110k",
-    "job_description": "We are seeking a highly motivated marketing manager to oversee our marketing team...",
-    "job_responsibility": "Develop and execute marketing strategies to increase brand awareness and drive sales...",
+    "job_description": "We are seeking a Web Developer to join our team and help us build responsive and user-friendly web applications. The ideal candidate should have experience with modern web technologies such as HTML, CSS, JavaScript, and React. In this role, you will work closely with other developers and designers to create engaging web experiences for our clients.",
+    "job_responsibility": "Design and develop web applications using modern web technologies such as HTML, CSS, JavaScript, and React. Collaborate with designers to create engaging and intuitive user interfaces. Write clean and efficient code that adheres to industry standards. Troubleshoot and debug issues as they arise.",
     "educational_requirements": "Bachelor's degree in Marketing, Business Administration or related field",
     "experiences": "7+ years of experience in marketing, with at least 3 years in a managerial role",
     "contact_information": {
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": "job003",
+    "id": "003",
     "company_logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
     "job_title": "UX Designer",
     "company_name": "Tesla",
@@ -44,8 +44,8 @@
     "location": "Buffalo, US",
     "fulltime_or_parttime": "Full-time",
     "salary": "80k - 100k",
-    "job_description": "We are looking for a talented UX Designer to help us create user-centered designs...",
-    "job_responsibility": "Design and prototype user interfaces for web and mobile applications...",
+    "job_description": "We are seeking a Marketing Manager to lead our marketing team and drive the growth of our business. The ideal candidate should have experience in developing and executing marketing strategies across multiple channels, including digital, social media, and events. In this role, you will collaborate with other teams to identify business needs and develop campaigns that drive customer acquisition and retention.",
+    "job_responsibility": "Lead the development and execution of marketing strategies across multiple channels, including digital, social media, and events. Collaborate with other teams to identify business needs and develop campaigns that drive customer acquisition and retention. Manage a team of marketing professionals to ensure the successful implementation of marketing plans. Analyze and report on the effectiveness of marketing campaigns.",
     "educational_requirements": "Bachelor's degree in Design, Human-Computer Interaction or related field",
     "experiences": "3+ years of experience in UX design",
     "contact_information": {
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": "job004",
+    "id": "004",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png",
     "job_title": "Human Resources Manager",
     "company_name": "Airbnb LLC",
@@ -62,8 +62,8 @@
     "location": "New York, NY",
     "fulltime_or_parttime": "Full-time",
     "salary": "80k - 100k",
-    "job_description": "We are seeking a Human Resources Manager to lead our HR team and support our company's growth...",
-    "job_responsibility": "Develop and implement HR strategies and initiatives aligned with the overall business strategy...",
+    "job_description": "We are seeking a Software Engineer to join our team and help us build scalable and reliable software systems. The ideal candidate should have experience with modern software development practices and technologies, such as Agile, DevOps, and Cloud Computing. In this role, you will work closely with other developers and engineers to design, implement, and test software solutions that meet our business needs.",
+    "job_responsibility": "Design, implement, and test software solutions that meet business needs. Work collaboratively with other developers and engineers to design and implement high-quality software systems. Follow modern software development practices and technologies, such as Agile, DevOps, and Cloud Computing. Troubleshoot and debug issues as they arise.",
     "educational_requirements": "Bachelor's degree in Human Resources or related field",
     "experiences": "5+ years of experience in HR management",
     "contact_information": {
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": "job005",
+    "id": "005",
     "company_logo": "https://w7.pngwing.com/pngs/674/324/png-transparent-youtube-logo-music-video-computer-icons-youtube-logo-text-trademark-logo.png",
     "job_title": "Data Analyst",
     "company_name": "YouTube",
@@ -80,8 +80,8 @@
     "location": "Chicago, IL",
     "fulltime_or_parttime": "Full-time",
     "salary": "70k - 90k",
-    "job_description": "We are looking for a data analyst to join our team and help us make data-driven decisions...",
-    "job_responsibility": "Collect and analyze large sets of data to identify trends and insights...",
+    "job_description": "We are seeking a talented Graphic Designer to join our team. The ideal candidate should have a strong portfolio demonstrating experience in creating visual designs across multiple channels, including digital, print, and social media. In this role, you will collaborate with other teams to understand business needs and create compelling designs that resonate with our target audience.",
+    "job_responsibility": "Create visual designs across multiple channels, including digital, print, and social media. Collaborate with other teams to understand business needs and create compelling designs that resonate with our target audience. Present design concepts and collaborate with stakeholders to finalize designs. Stay up-to-date with industry trends and best practices.",
     "educational_requirements": "Bachelor's degree in Data Science, Statistics, or related field",
     "experiences": "2+ years of experience in data analysis",
     "contact_information": {
@@ -90,7 +90,7 @@
     }
   },
   {
-    "id": "job006",
+    "id": "006",
     "company_logo": "https://logos-world.net/wp-content/uploads/2020/05/Twitter-Logo-2010.png",
     "job_title": "Graphic Designer",
     "company_name": "Twitter",
@@ -98,8 +98,8 @@
     "location": "Miami, US",
     "fulltime_or_parttime": "Part-time",
     "salary": "25k - 30k",
-    "job_description": "We are seeking a creative graphic designer to join our team and help us create stunning visuals...",
-    "job_responsibility": "Design and produce high-quality visuals for both print and digital media...",
+    "job_description": "We are seeking a Data Scientist to join our growing team. The ideal candidate should have experience in statistical analysis, machine learning, and data visualization. In this role, you will collaborate with other teams to develop and deploy machine learning models and algorithms that drive business insights and decisions.",
+    "job_responsibility": "Develop and deploy machine learning models and algorithms that drive business insights and decisions. Collaborate with other teams to understand business needs and identify opportunities to leverage data. Analyze data using statistical methods and provide insights and recommendations to stakeholders. Communicate findings and recommendations to technical and non-technical stakeholders.",
     "educational_requirements": "Bachelor's degree in Graphic Design or related field",
     "experiences": "3+ years of experience in graphic design",
     "contact_information": {

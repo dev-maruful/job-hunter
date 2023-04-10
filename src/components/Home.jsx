@@ -14,8 +14,6 @@ const Home = () => {
   }, []);
 
   const featuredJobs = useLoaderData();
-  const initialFeaturedJobs = featuredJobs.slice(0, 4);
-  console.log(initialFeaturedJobs);
 
   return (
     <>
@@ -47,9 +45,11 @@ const Home = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-6 mb-10">
-        {initialFeaturedJobs.map((singleJob) => (
-          <FeaturedJob key={singleJob.id} singleJob={singleJob} />
-        ))}
+        {featuredJobs
+          ? featuredJobs.map((singleJob) => (
+              <FeaturedJob key={singleJob.id} singleJob={singleJob} />
+            ))
+          : ""}
       </div>
 
       <button className="bg-blueGradient w-[200px] text-white border-none py-4 rounded-lg text-xl font-extrabold mb-32">
