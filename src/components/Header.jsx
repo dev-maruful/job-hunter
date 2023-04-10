@@ -12,10 +12,10 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-base font-bold">
           <li>
-            <Link>Statistics</Link>
+            <Link to="/statistics">Statistics</Link>
           </li>
           <li>
-            <Link to="appliedJobs">Applied Jobs</Link>
+            <Link to="/appliedJobs">Applied Jobs</Link>
           </li>
           <li>
             <Link>Blog</Link>

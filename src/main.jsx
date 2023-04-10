@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import { data } from "autoprefixer";
 import JobDetails from "./components/JobDetails";
 import AppliedJobs from "./components/AppliedJobs";
+import Statistics from "./components/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "appliedJobs",
         element: <AppliedJobs />,
         loader: () => fetch("featuredJobs.json"),
+      },
+      {
+        path: "statistics",
+        element: <Statistics />,
       },
     ],
   },

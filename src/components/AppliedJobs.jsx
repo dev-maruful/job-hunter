@@ -11,7 +11,7 @@ const AppliedJobs = () => {
   let jobs = [];
   const savedJobs = getStoredJobsFromDb();
   for (const id in savedJobs) {
-    const foundJobs = allJobs.find((job) => job.id === id);
+    const foundJobs = allJobs ? allJobs.find((job) => job.id === id) : "";
     jobs.push(foundJobs);
   }
   console.log(jobs);
