@@ -9,11 +9,13 @@ import { data } from "autoprefixer";
 import JobDetails from "./components/JobDetails";
 import AppliedJobs from "./components/AppliedJobs";
 import Statistics from "./components/Statistics";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
