@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { getStoredJobsFromDb } from "../utils/fakeDB";
 import { useLoaderData } from "react-router-dom";
+import SingleJob from "./SingleJob";
 
 const AppliedJobs = () => {
   const allJobs = useLoaderData();
@@ -18,7 +19,7 @@ const AppliedJobs = () => {
   return (
     <div>
       <h1 className="my-14 text-3xl font-extrabold">Applied Jobs</h1>
-      <div className="dropdown dropdown-end w-full">
+      <div className="dropdown dropdown-end w-full mb-8">
         <div className=" text-right w-full">
           <button
             tabIndex={0}
@@ -35,11 +36,16 @@ const AppliedJobs = () => {
           <li>
             <button>Remote</button>
           </li>
+          <hr className="text-violet-300 my-1" />
           <li>
-            <button>On-site</button>
+            <button>Onsite</button>
           </li>
         </ul>
       </div>
+
+      {jobs.map((job) => (
+        <SingleJob key={job.id} job={job} />
+      ))}
     </div>
   );
 };
