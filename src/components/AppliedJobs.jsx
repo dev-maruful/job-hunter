@@ -14,7 +14,6 @@ const AppliedJobs = () => {
     const foundJobs = allJobs ? allJobs.find((job) => job.id === id) : "";
     jobs.push(foundJobs);
   }
-  console.log(jobs);
 
   return (
     <div>

@@ -13,11 +13,9 @@ import { addJobsToDb } from "../utils/fakeDB";
 const JobDetails = () => {
   const jobDetails = useLoaderData();
   const { id } = useParams();
-  console.log(id);
 
   const handleAddToDb = (id) => {
     addJobsToDb(id);
-    console.log(id);
   };
 
   const [jobData, setJobData] = useState({});
@@ -36,7 +34,6 @@ const JobDetails = () => {
     location,
     contact_information,
   } = jobData;
-  console.log(jobData);
 
   return (
     <div>

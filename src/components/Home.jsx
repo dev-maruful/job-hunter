@@ -6,6 +6,11 @@ import FeaturedJob from "./FeaturedJob";
 
 const Home = () => {
   const [categoryData, setCategoryData] = useState([]);
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
 
   useEffect(() => {
     fetch("categoryList.json")
@@ -46,15 +51,22 @@ const Home = () => {
 
       <div className="grid grid-cols-2 gap-6 mb-10">
         {featuredJobs
-          ? featuredJobs.map((singleJob) => (
-              <FeaturedJob key={singleJob.id} singleJob={singleJob} />
-            ))
+          ? featuredJobs
+              .slice(0, showAll ? 6 : 4)
+              .map((singleJob) => (
+                <FeaturedJob key={singleJob.id} singleJob={singleJob} />
+              ))
           : ""}
       </div>
 
-      <button className="bg-blueGradient w-[200px] text-white border-none py-4 rounded-lg text-xl font-extrabold mb-32">
-        See All Jobs
-      </button>
+      {!showAll && (
+        <button
+          onClick={handleShowAll}
+          className="bg-blueGradient w-[200px] text-white border-none py-4 rounded-lg text-xl font-extrabold mb-10"
+        >
+          See All Jobs
+        </button>
+      )}
     </>
   );
 };
