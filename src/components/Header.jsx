@@ -18,12 +18,12 @@ const Header = () => {
             <Link to="/appliedJobs">Applied Jobs</Link>
           </li>
           <li>
-            <Link>Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="bg-blueGradient text-white border-none px-7 py-5 rounded-lg text-xl font-extrabold">
+        <button className="bg-blueGradient text-white border-none px-7 py-3 rounded-lg text-xl font-extrabold">
           Start Applying
         </button>
       </div>
