@@ -7,16 +7,25 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import { addToDb } from "../utils/fakeDB";
 
 const JobDetails = () => {
   const jobDetails = useLoaderData();
-  console.log(jobDetails);
-
   const { id } = useParams();
   console.log(id);
 
-  const found = jobDetails ? jobDetails.find((job) => job.id === id) : "";
-  console.log(found);
+  const handleAddToDb = (id) => {
+    addToDb(id);
+    console.log(id);
+  };
+
+  const [jobData, setJobData] = useState({});
+
+  useEffect(() => {
+    const found = jobDetails ? jobDetails.find((job) => job.id === id) : "";
+    setJobData(found);
+  }, []);
   const {
     job_description,
     job_responsibility,
@@ -26,11 +35,12 @@ const JobDetails = () => {
     job_title,
     location,
     contact_information,
-  } = found;
+  } = jobData;
+  console.log(jobData);
 
   return (
     <div>
-      <h1 className="my-14 text-3xl font-extrabold">Job Details</h1>;
+      <h1 className="my-14 text-3xl font-extrabold">Job Details</h1>
       <div className="grid grid-cols-3 w-full text-left gap-6">
         <div className="col-span-2">
           <p className="text-base font-medium text-gray mb-6">
@@ -110,7 +120,10 @@ const JobDetails = () => {
               </p>
             </div>
           </div>
-          <button className="bg-blueGradient w-full text-white border-none py-4 rounded-lg text-xl font-extrabold">
+          <button
+            onClick={() => handleAddToDb(id)}
+            className="bg-blueGradient w-full text-white border-none py-4 rounded-lg text-xl font-extrabold"
+          >
             Apply Now
           </button>
         </div>
