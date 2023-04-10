@@ -12,13 +12,13 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-base font-bold">
           <li>
-            <a>Statistics</a>
+            <Link>Statistics</Link>
           </li>
           <li>
-            <a>Applied Jobs</a>
+            <Link to="appliedJobs">Applied Jobs</Link>
           </li>
           <li>
-            <a>Blog</a>
+            <Link>Blog</Link>
           </li>
         </ul>
       </div>
