@@ -21,3 +21,8 @@
 .category-item-p {
   @apply text-mediumDarkGray text-base font-medium
 }
+
+.active {
+  color: #8e9dfe;
+  font-size: 18px;
+}

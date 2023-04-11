@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,13 +12,28 @@ const Header = () => {
       <div>
         <ul className="flex flex-col gap-3 md:flex-row md:gap-10 px-1 text-base font-bold">
           <li className="block">
-            <Link to="/statistics">Statistics</Link>
+            <NavLink
+              to="/statistics"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Statistics
+            </NavLink>
           </li>
           <li className="block">
-            <Link to="/appliedJobs">Applied Jobs</Link>
+            <NavLink
+              to="/appliedJobs"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Applied Jobs
+            </NavLink>
           </li>
           <li className="block">
-            <Link to="/blog">Blog</Link>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Blog
+            </NavLink>
           </li>
         </ul>
       </div>
