@@ -32,7 +32,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 text-left gap-6 mb-32">
+      <div className="grid md:grid-cols-4 text-left gap-6 mb-32">
         {categoryData.map((singleCategoryItem) => (
           <JobCategoryItem
             key={singleCategoryItem.id}
@@ -49,7 +49,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 mb-10">
+      <div className="grid md:grid-cols-2 gap-6 mb-10">
         {featuredJobs
           ? featuredJobs
               .slice(0, showAll ? 6 : 4)
