@@ -1,3 +1,5 @@
+import { toast } from "react-hot-toast";
+
 const addJobsToDb = (id) => {
   let addedJobs = {};
 
@@ -10,9 +12,10 @@ const addJobsToDb = (id) => {
   // add quantity
   const quantity = addedJobs[id];
   if (quantity) {
-    alert("product already added");
+    toast.error("Already applied for this job");
   } else {
     addedJobs[id] = 1;
+    toast.success("Successfully applied for this job");
   }
   localStorage.setItem("added-jobs", JSON.stringify(addedJobs));
 };
