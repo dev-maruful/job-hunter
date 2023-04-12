@@ -44,8 +44,8 @@ const Home = () => {
       <div className="mb-8">
         <h2 className="text-5xl font-extrabold mb-4">Featured Jobs</h2>
         <p className="text-base text-gray font-medium">
-          Explore thousands of job opportunities with all the information you
-          need. Its your future
+          Find your job here. Manage all your job application from start to
+          finish.
         </p>
       </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { getStoredJobsFromDb } from "../utils/fakeDB";
@@ -7,13 +7,24 @@ import SingleJob from "./SingleJob";
 
 const AppliedJobs = () => {
   const allJobs = useLoaderData();
+  const [displayJobs, setDisplayJobs] = useState([]);
+  useEffect(() => {
+    let jobs = [];
+    const savedJobs = getStoredJobsFromDb();
+    for (const id in savedJobs) {
+      const foundJobs = allJobs ? allJobs.find((job) => job.id === id) : "";
+      jobs.push(foundJobs);
+    }
+    setDisplayJobs(jobs);
+  }, []);
 
-  let jobs = [];
-  const savedJobs = getStoredJobsFromDb();
-  for (const id in savedJobs) {
-    const foundJobs = allJobs ? allJobs.find((job) => job.id === id) : "";
-    jobs.push(foundJobs);
-  }
+  // filter remote and onsite jobs
+  const handleFilterJobs = (value) => {
+    const filteredJobs = displayJobs.filter(
+      (job) => job.remote_or_onsite === value
+    );
+    setDisplayJobs(filteredJobs);
+  };
 
   return (
     <div>
@@ -30,19 +41,19 @@ const AppliedJobs = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 border border-veryLightGray"
         >
           <li>
-            <button>Remote</button>
+            <button onClick={() => handleFilterJobs("Remote")}>Remote</button>
           </li>
           <hr className="text-violet-300 my-1" />
           <li>
-            <button>Onsite</button>
+            <button onClick={() => handleFilterJobs("Onsite")}>Onsite</button>
           </li>
         </ul>
       </div>
 
-      {jobs.map((job) => (
+      {displayJobs.map((job) => (
         <SingleJob key={job.id} job={job} />
       ))}
     </div>
